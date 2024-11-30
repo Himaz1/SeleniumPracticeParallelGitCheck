@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+    </listeners>
+
+    <!-- Chrome Tests -->
+    <test name="Chrome Tests">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.qa.testcases.HimazTestPage" />
+            <class name="com.qa.testcases.ChromeTest" />
+                
+        </classes>
+    </test>
+
+    <!-- Firefox Tests -->
+    <test name="Firefox Tests">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="com.qa.testcases.FirefoxTest" />
+                
+        </classes>
+    </test>
+
+</suite>

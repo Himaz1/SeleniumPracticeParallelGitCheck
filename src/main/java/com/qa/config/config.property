@@ -1,0 +1,23 @@
+# WebDriver configuration
+browser=chrome              # Default browser to be used for the tests. Change this value as per your need (chrome, firefox, ie)
+
+# Base URL of the application
+url=https://demoqa.com/books    
+
+# The URL for your test environment or application under test
+
+# Browser-specific configurations
+chrome.driver.path=D:\\backup2\\Softwares\\latestChrome\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe
+gecko.driver.path=D:\\backup2\\Softwares\\latestGecho\\geckodriver-v0.35.0-win64\\geckodriver.exe
+# ie.driver.path=C:\\Users\\it17145930\\aaaWorkspace\\browserDrivers\\IEDriver\\IEDriverServer_x64_3.14.0\\IEDriverServer.exe
+
+# Credentials (for login or other scenarios)
+username=test
+password=test
+
+# Timeout values (for page load, implicit wait, etc.)
+page.load.timeout=30
+implicit.wait=10
+
+# Additional settings (can be customized as per your project needs)
+# For cross-browser testing, you can also add additional configurations here
